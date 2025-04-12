@@ -97,8 +97,22 @@ public class AileButcemPage {
         Assert.assertTrue(cinsiyetkutusu.getText().equals("Kadın"));
     }
 
+    @FindBy(xpath = "//*[@text='Gelir Tipi']")
+    public MobileElement GelirTipiYazisi;
 
+    @FindBy(xpath = "//*[@text='Kategori']")
+    public MobileElement KategoriYazisi;
 
+    @FindBy(xpath = "(//*[@class='android.widget.ImageView'])[5]")
+    public MobileElement TarihButonu;
 
+    @FindBy(xpath = "(//*[@class='android.widget.EditText'])[2]")
+    public MobileElement TutarAlani;
+
+    @FindBy(xpath = "(//*[@class='android.widget.EditText'])[1]")
+    public MobileElement AciklamaAlani;
+
+    @FindBy(xpath = "//*[@text='Gelir eklendi.']")
+    public MobileElement BasariliKayitYazisi;
 
 }

@@ -16,7 +16,9 @@ public class BrowserDriver {
     private static IOSDriver<IOSElement> iosDriver;
 
     static final String TELEFONADI="Pixel 4";
+   // static final String TELEFONADI="Gercek cihaz ismi";
     static final String ANDROIDVERSION="10.0";
+   // static final String ANDROIDVERSION="gercek cihaz versiyonu";
     static final String PLATFORM="Android";
     static final String OTOMASYON_ISMI="UiAutomator2";
 
@@ -40,6 +42,11 @@ public class BrowserDriver {
             caps.setCapability(MobileCapabilityType.AUTOMATION_NAME, OTOMASYON_ISMI);
             caps.setCapability(MobileCapabilityType.BROWSER_NAME,"chrome");
             caps.setCapability("chromedriverExecutable","C:\\Users\\elifk\\IdeaProjects\\T153_AppiumCucumber\\Driver\\chromedriver.exe");
+            /*
+            Gercek telefonda browser testi icin gerekli:
+            //caps.setCapability("chromedriverExecutable","C:\\Users\\elifk\\IdeaProjects\\T153_AppiumCucumber\\Driver\\chromedriver.exe");
+            // gercek telefondan test yapmak icin gercek telefonun chrome versiyonu olan 135..... exe, Driver'a ekledik
+             */
 
             // Eğer Appium’un kendi içinde gömülü gelen chromedriver sürümü,
             // cihazınızdaki Chrome ile uyumlu değilse, Appium hata verebilir.
